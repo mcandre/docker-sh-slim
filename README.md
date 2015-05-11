@@ -1,4 +1,4 @@
-# docker-sh-slim - a Docker container that launches a shell session for running multiple commands
+# docker-sh-slim - a slim Docker container that launches a shell session for running multiple commands
 
 # ABOUT
 
