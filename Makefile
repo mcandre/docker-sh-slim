@@ -6,7 +6,7 @@ build: Dockerfile
 	docker build -t $(IMAGE) .
 
 run: clean-containers build
-	docker run -it $(IMAGE) sh
+	echo 'exit' | docker run $(IMAGE) sh
 	docker images | grep $(IMAGE) | awk '{ print $$(NF-1), $$NF }'
 
 clean-containers:
